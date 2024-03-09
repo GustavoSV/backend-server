@@ -27,14 +27,14 @@ const producto1 = new ProductsManager;
 producto1.create({
   photo: "http://fotos.com/producto1.jpg",
   title: "Lápiz en carboncillo #2",
-  category: "Utiles",
+  category: "Papeleria",
   price: 2000,
   stock: 100
 });
 producto1.create({
   photo: "http://fotos.com/producto2.jpg",
   title: "Sanguina #201",
-  category: "Utiles",
+  category: "Papeleria",
   price: 3000,
   stock: 60
 });
@@ -55,7 +55,7 @@ producto1.create({
 producto1.create({
   photo: "http://fotos.com/producto5.jpg",
   title: "Marcador colores varios",
-  category: "Utiles",
+  category: "Papeleria",
   price: 4260,
   stock: 45
 });
