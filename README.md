@@ -13,4 +13,5 @@ Para la realización de las pruebas, se recomienda eliminar los archivos existen
 La ejecución se realiza, clonando el repositorio 'sprint2' desde VisualStudio Code, se abre una consola GitBash y desde alli se ejecutan cada uno de los archivos Javascript desde el entorno 'node' con los comandos:
 * node ./data/fs/UsersManager.js
 * node ./data/fs/ProductsManager.js
+
 Los resultados se verán en la consola y consultando los respectivos archivos JSON mencionados anteriormente. 
