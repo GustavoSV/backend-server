@@ -1,5 +1,5 @@
-const fs = require("fs");
-const crypto = require("crypto");
+import fs from "fs";
+import crypto from "crypto";
 
 class UsersManager {
   constructor() {
@@ -30,8 +30,8 @@ class UsersManager {
             id: crypto.randomBytes(12).toString("hex"),
             photo: data.photo || "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
             email: data.email,
-            password: data.passsword,
-            rol: data.rol,
+            password: data.password || "",
+            rol: data.rol || 0,
           };
           let archivo = await fs.promises.readFile(this.path, "utf-8");
           archivo = JSON.parse(archivo);
@@ -44,20 +44,23 @@ class UsersManager {
       }
     } catch (error) {
       console.log("ERROR método create()", error);
+      return null;
     }
   }
 
-  async read() {
+  async read(rol) {
     try {
       let archivo = await fs.promises.readFile(this.path, "utf-8");
       archivo = JSON.parse(archivo);
+      rol && (archivo = archivo.filter((each) => each.rol === rol));
       if (archivo.length === 0) {
-        console.log("Usuarios leídos: NO HAY USUARIOS");
+        return null;
       } else {
         return archivo;
       }
     } catch (error) {
       console.log("ERROR método read()", error);
+      return null;
     }
   }
 
@@ -96,51 +99,54 @@ class UsersManager {
 }
 
 // función para probar la clase UsersManager
-async function test() {
-  try {
-    const usuario = new UsersManager();
+// async function test() {
+//   try {
+//     const usuario = new UsersManager();
 
-    const usuario1 = {
-      email: "rebeca@usuarios.com",
-      password: "usuario123",
-      role: 0
-    };
-    const usuario2 = {
-      email: "maria@usuarios.com",
-      password: "clave123",
-      rol: 1
-    };
-    const usuario3 = {
-      email: "gustavo@usuarios.com",
-      password: "clave123",
-      rol: 0
-    };
-    const usuario4 = {
-      email: "augusto@usuarios.com",
-      password: "usuario123",
-      rol: 1
-    };
-    await usuario.create(usuario1);
-    await usuario.create(usuario2);
-    await usuario.create(usuario3);
-    await usuario.create(usuario4);
+//     const usuario1 = {
+//       email: "rebeca@usuarios.com",
+//       password: "usuario123",
+//       role: 0
+//     };
+//     const usuario2 = {
+//       email: "maria@usuarios.com",
+//       password: "clave123",
+//       rol: 1
+//     };
+//     const usuario3 = {
+//       email: "gustavo@usuarios.com",
+//       password: "clave123",
+//       rol: 0
+//     };
+//     const usuario4 = {
+//       email: "augusto@usuarios.com",
+//       password: "usuario123",
+//       rol: 1
+//     };
+//     await usuario.create(usuario1);
+//     await usuario.create(usuario2);
+//     await usuario.create(usuario3);
+//     await usuario.create(usuario4);
 
-    const usuariosLista = await usuario.read();
-    console.log("USUARIOS LISTA:", usuariosLista);
+//     const usuariosLista = await usuario.read();
+//     console.log("USUARIOS LISTA:", usuariosLista);
 
-    const testUsuario = await usuario.create({
-      email: "pruebas@usuarios.com",
-      password: "pruebas123",
-      rol: 2
-    });
-    console.log("ID testUsuario:", testUsuario.id);
-    const usuarioLeido = await usuario.readOne(testUsuario.id);
-    console.log("USUARIO LEIDO:", usuarioLeido); 
-    const usuarioEliminado = await usuario.destroy(testUsuario.id);
-    console.log("USUARIO ELIMINADO", usuarioEliminado);
-  } catch (error) {
-    console.log("ERROR en el TEST", error);
-  }
-}
+//     const testUsuario = await usuario.create({
+//       email: "pruebas@usuarios.com",
+//       password: "pruebas123",
+//       rol: 2
+//     });
+//     console.log("ID testUsuario:", testUsuario.id);
+//     const usuarioLeido = await usuario.readOne(testUsuario.id);
+//     console.log("USUARIO LEIDO:", usuarioLeido); 
+//     const usuarioEliminado = await usuario.destroy(testUsuario.id);
+//     console.log("USUARIO ELIMINADO", usuarioEliminado);
+//   } catch (error) {
+//     console.log("ERROR en el TEST", error);
+//   }
+// }
 
-test();
+// // test();
+
+const usersManager = new UsersManager();
+export default usersManager; 

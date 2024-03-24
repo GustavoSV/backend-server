@@ -1,48 +1,37 @@
 [
   {
-    "id": "83a94c00c2f5e11a803eb76a",
-    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
-    "email": "rebeca@usuarios.com"
-  },
-  {
-    "id": "1086db77f025d7dd937f8ca0",
-    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
-    "email": "maria@usuarios.com",
-    "rol": 1
-  },
-  {
-    "id": "c6aec83a7f3192abc5facc09",
+    "id": "7eda93e6d613fe4842324faf",
     "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
     "email": "gustavo@usuarios.com",
-    "rol": 0
+    "password": "",
+    "rol": "1"
   },
   {
-    "id": "758f40f1e2dbcad8ab21fed2",
-    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
-    "email": "augusto@usuarios.com",
-    "rol": 1
-  },
-  {
-    "id": "72941603fb85817dd406aa5c",
-    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
-    "email": "rebeca@usuarios.com"
-  },
-  {
-    "id": "04ef7fe2ffb3f141d3bdaa8c",
-    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
-    "email": "maria@usuarios.com",
-    "rol": 1
-  },
-  {
-    "id": "acacd6c2d2e3338fcc879b00",
+    "id": "02fcf65773d362a9157a37ee",
     "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
     "email": "gustavo@usuarios.com",
-    "rol": 0
+    "password": "clave123",
+    "rol": "2"
   },
   {
-    "id": "5e25d11a6c7eb14fccc68ec7",
+    "id": "cc7306a8f3ae47ca66b8481e",
     "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
-    "email": "augusto@usuarios.com",
-    "rol": 1
+    "email": "gustavo@usuarios.com",
+    "password": "2xxx444",
+    "rol": "1"
+  },
+  {
+    "id": "2b1502958a350c339aae9184",
+    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
+    "email": "sergiño@usuarios.com",
+    "password": "rrTYH56",
+    "rol": "2"
+  },
+  {
+    "id": "32f11994487888c2ff5b546b",
+    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
+    "email": "marquiños@usuarios.com",
+    "password": "GG709ijU",
+    "rol": "2"
   }
 ]
