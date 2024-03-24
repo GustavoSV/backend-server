@@ -14,4 +14,4 @@ La ejecución se realiza, clonando el repositorio 'sprint2' desde VisualStudio C
 * node ./data/fs/UsersManager.js
 * node ./data/fs/ProductsManager.js
 
-Los resultados se verán en la consola y consultando los respectivos archivos JSON mencionados anteriormente. 
+Los resultados se verán en la consola y consultando los respectivos archivos JSON mencionados anteriormente.
