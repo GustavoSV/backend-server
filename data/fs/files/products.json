@@ -1,0 +1,82 @@
+[
+  {
+    "id": "44ac8aa196f1e25f5358fda5",
+    "title": "Lápiz en carboncillo #2",
+    "photo": "http://fotos.com/producto1.jpg",
+    "category": "Papeleria",
+    "price": 2000,
+    "stock": 100
+  },
+  {
+    "id": "83cad196fc02ddf6e44a6aec",
+    "title": "Sanguina #201",
+    "photo": "http://fotos.com/producto2.jpg",
+    "category": "Papeleria",
+    "price": 3000,
+    "stock": 60
+  },
+  {
+    "id": "4fe021ccc194ffd2b45c3626",
+    "title": "Pisapapeles clásico",
+    "photo": "http://fotos.com/producto3.jpg",
+    "category": "Escritorio",
+    "price": 1890,
+    "stock": 78
+  },
+  {
+    "id": "fdfdebb83449235d3fb0d161",
+    "title": "Organizador de libros",
+    "photo": "http://fotos.com/producto4.jpg",
+    "category": "Escritorio",
+    "price": 3565,
+    "stock": 23
+  },
+  {
+    "id": "4ccb7b8f93d89fd2c77ac1af",
+    "title": "Marcador colores varios",
+    "photo": "http://fotos.com/producto5.jpg",
+    "category": "Papeleria",
+    "price": 4380,
+    "stock": 45
+  },
+  {
+    "id": "183e5102098f11d4bf236723",
+    "title": "Cuadernos 100 hojas argollado",
+    "photo": "http://fotos.com/producto6.jpg",
+    "category": "Papeleria",
+    "price": 5500,
+    "stock": 150
+  },
+  {
+    "id": "2f6ac8c997bb955253294d22",
+    "title": "Diccionario Lengua española",
+    "photo": "http://fotos.com/producto7.jpg",
+    "category": "Librería",
+    "price": 9050,
+    "stock": 25
+  },
+  {
+    "id": "eccb6171d0f4ed199db39793",
+    "title": "Carpetas tamaño oficio",
+    "photo": "http://fotos.com/producto8.jpg",
+    "category": "Papelería",
+    "price": 3900,
+    "stock": 50
+  },
+  {
+    "id": "14adad7cb9b60d391dade771",
+    "title": "Manual de convivencia escolar",
+    "photo": "http://fotos.com/producto9.jpg",
+    "category": "Librería",
+    "price": 5800,
+    "stock": 20
+  },
+  {
+    "id": "dd7d4be0ff29b143db02f8a8",
+    "title": "Lapiceros punta fina",
+    "photo": "http://fotos.com/producto10.jpg",
+    "category": "Utiles",
+    "price": 2900,
+    "stock": 100
+  }
+]

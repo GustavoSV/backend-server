@@ -23,14 +23,26 @@ class UsersManager {
 
 const usuario1 = new UsersManager;
 usuario1.create({
-  foto: "http://misfotos/fotoGustavo.jpg",
-  email: "gustavo@gus.com",
+  foto: "http://misfotos/fotoRebeca.jpg",
+  email: "rebeca@usuarios.com",
   password: "usuario123",
   role: 0
 })
 usuario1.create({
-  foto: "http://misfotos.com/fotoGustavo.jpg",
-  email: "gus@gus.com",
+  foto: "http://misfotos.com/fotoMaria.jpg",
+  email: "maria@usuarios.com",
+  password: "user123",
+  role: 0
+})
+usuario1.create({
+  foto: "http://misfotos/fotoGustavo.jpg",
+  email: "gustavo@usuarios.com",
+  password: "usuario123",
+  role: 0
+})
+usuario1.create({
+  foto: "http://misfotos.com/fotoAugusto.jpg",
+  email: "augusto@usuarios.com",
   password: "user123",
   role: 0
 })

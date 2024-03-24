@@ -56,7 +56,42 @@ producto1.create({
   photo: "http://fotos.com/producto5.jpg",
   title: "Marcador colores varios",
   category: "Papeleria",
-  price: 4260,
+  price: 4380,
   stock: 45
+});
+producto1.create({
+  photo: "http://fotos.com/producto6.jpg",
+  title: "Cuadernos 100 hojas argollado",
+  category: "Papeleria",
+  price: 5500,
+  stock: 150
+});
+producto1.create({
+  photo: "http://fotos.com/producto7.jpg",
+  title: "Diccionario Lengua española",
+  category: "Librería",
+  price: 9050,
+  stock: 25
+});
+producto1.create({
+  photo: "http://fotos.com/producto8.jpg",
+  title: "Carpetas tamaño oficio",
+  category: "Papelería",
+  price: 3900,
+  stock: 50
+});
+producto1.create({
+  photo: "http://fotos.com/producto9.jpg",
+  title: "Manual de convivencia escolar",
+  category: "Librería",
+  price: 5800,
+  stock: 20
+});
+producto1.create({
+  photo: "http://fotos.com/producto10.jpg",
+  title: "Lapiceros punta fina",
+  category: "Utiles",
+  price: 2900,
+  stock: 100
 });
 console.log(producto1.read());

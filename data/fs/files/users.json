@@ -1,0 +1,48 @@
+[
+  {
+    "id": "83a94c00c2f5e11a803eb76a",
+    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
+    "email": "rebeca@usuarios.com"
+  },
+  {
+    "id": "1086db77f025d7dd937f8ca0",
+    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
+    "email": "maria@usuarios.com",
+    "rol": 1
+  },
+  {
+    "id": "c6aec83a7f3192abc5facc09",
+    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
+    "email": "gustavo@usuarios.com",
+    "rol": 0
+  },
+  {
+    "id": "758f40f1e2dbcad8ab21fed2",
+    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
+    "email": "augusto@usuarios.com",
+    "rol": 1
+  },
+  {
+    "id": "72941603fb85817dd406aa5c",
+    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
+    "email": "rebeca@usuarios.com"
+  },
+  {
+    "id": "04ef7fe2ffb3f141d3bdaa8c",
+    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
+    "email": "maria@usuarios.com",
+    "rol": 1
+  },
+  {
+    "id": "acacd6c2d2e3338fcc879b00",
+    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
+    "email": "gustavo@usuarios.com",
+    "rol": 0
+  },
+  {
+    "id": "5e25d11a6c7eb14fccc68ec7",
+    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
+    "email": "augusto@usuarios.com",
+    "rol": 1
+  }
+]
