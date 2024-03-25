@@ -1,162 +1,79 @@
 [
   {
-    "id": "44ac8aa196f1e25f5358fda5",
-    "title": "Lápiz en carboncillo #2",
-    "photo": "http://fotos.com/producto1.jpg",
-    "category": "Papeleria",
-    "price": 2000,
-    "stock": 100
+    "id": "2a6a17d8a4e95e9da29ad9f8",
+    "title": "ULTIMATE HITS",
+    "author": "THE STEVE MILLER BAND",
+    "category": "ROCK",
+    "language": "INGLES",
+    "price": 259000,
+    "stock": 100,
+    "type": "VINILO",
+    "img": "./img/ULTIMATE HITS.GIF"
   },
   {
-    "id": "83cad196fc02ddf6e44a6aec",
-    "title": "Sanguina #201",
-    "photo": "http://fotos.com/producto2.jpg",
-    "category": "Papeleria",
-    "price": 3000,
-    "stock": 60
+    "id": "860f36c853819d97a2ea44c9",
+    "title": "SPELL MY NAME",
+    "author": "TONI BRAXTON",
+    "category": "JAZZ",
+    "language": "INGLES",
+    "price": 145000,
+    "stock": 100,
+    "type": "VINILO",
+    "img": "./img/SPELL MY NAME.GIF"
   },
   {
-    "id": "4fe021ccc194ffd2b45c3626",
-    "title": "Pisapapeles clásico",
-    "photo": "http://fotos.com/producto3.jpg",
-    "category": "Escritorio",
-    "price": 1890,
-    "stock": 78
+    "id": "c3b6b815b8b14baee3d38c6d",
+    "title": "SPELL MY NAME",
+    "author": "TONI BRAXTON",
+    "category": "JAZZ",
+    "language": "INGLES",
+    "price": 145000,
+    "stock": 100,
+    "type": "VINILO",
+    "img": "./img/SPELL MY NAME.GIF"
   },
   {
-    "id": "fdfdebb83449235d3fb0d161",
-    "title": "Organizador de libros",
-    "photo": "http://fotos.com/producto4.jpg",
-    "category": "Escritorio",
-    "price": 3565,
-    "stock": 23
+    "id": "7583f039c20b1e8bb7831d4d",
+    "title": "SHINE A LIGHT",
+    "author": "BRYAN ADAMS",
+    "category": "POP",
+    "language": "INGLES",
+    "price": 145000,
+    "stock": 100,
+    "type": "VINILO",
+    "img": "./img/SHINE A LIGHT.GIF"
   },
   {
-    "id": "4ccb7b8f93d89fd2c77ac1af",
-    "title": "Marcador colores varios",
-    "photo": "http://fotos.com/producto5.jpg",
-    "category": "Papeleria",
-    "price": 4380,
-    "stock": 45
+    "id": "02713aa94753458ba16d7883",
+    "title": "PLASTIC HEARTS",
+    "author": "MILEY CYRUS",
+    "category": "POP",
+    "language": "INGLES",
+    "price": 333299,
+    "stock": 100,
+    "type": "VINILO",
+    "img": "./img/PLASTIC HEARTS.GIF"
   },
   {
-    "id": "183e5102098f11d4bf236723",
-    "title": "Cuadernos 100 hojas argollado",
-    "photo": "http://fotos.com/producto6.jpg",
-    "category": "Papeleria",
-    "price": 5500,
-    "stock": 150
+    "id": "977404efdcaa3f00270fdd41",
+    "title": "BRIDGES TO BREMEN",
+    "author": "THE ROLLING STONES",
+    "category": "ROCK",
+    "language": "INGLES",
+    "price": 375000,
+    "stock": 100,
+    "type": "CD",
+    "img": "./img/BRIDGES TO BREMEN.GIF"
   },
   {
-    "id": "2f6ac8c997bb955253294d22",
-    "title": "Diccionario Lengua española",
-    "photo": "http://fotos.com/producto7.jpg",
-    "category": "Librería",
-    "price": 9050,
-    "stock": 25
-  },
-  {
-    "id": "eccb6171d0f4ed199db39793",
-    "title": "Carpetas tamaño oficio",
-    "photo": "http://fotos.com/producto8.jpg",
-    "category": "Papelería",
-    "price": 3900,
-    "stock": 50
-  },
-  {
-    "id": "14adad7cb9b60d391dade771",
-    "title": "Manual de convivencia escolar",
-    "photo": "http://fotos.com/producto9.jpg",
-    "category": "Librería",
-    "price": 5800,
-    "stock": 20
-  },
-  {
-    "id": "dd7d4be0ff29b143db02f8a8",
-    "title": "Lapiceros punta fina",
-    "photo": "http://fotos.com/producto10.jpg",
-    "category": "Utiles",
-    "price": 2900,
-    "stock": 100
-  },
-  {
-    "id": "71250991623310c332287699",
-    "title": "Lápiz en carboncillo #2",
-    "photo": "http://fotos.com/producto1.jpg",
-    "category": "Papeleria",
-    "price": 2000,
-    "stock": 100
-  },
-  {
-    "id": "49d76be0f86e5d9a05ca9402",
-    "title": "Sanguina #201",
-    "photo": "http://fotos.com/producto2.jpg",
-    "category": "Papeleria",
-    "price": 3000,
-    "stock": 60
-  },
-  {
-    "id": "412768713534cdad10366446",
-    "title": "Pisapapeles clásico",
-    "photo": "http://fotos.com/producto3.jpg",
-    "category": "Escritorio",
-    "price": 1890,
-    "stock": 78
-  },
-  {
-    "id": "c38e5a8834f23ccd85df518e",
-    "title": "Organizador de libros",
-    "photo": "http://fotos.com/producto4.jpg",
-    "category": "Escritorio",
-    "price": 3565,
-    "stock": 23
-  },
-  {
-    "id": "ab5daebe71e8a2cc72e6c7fa",
-    "title": "Marcador colores varios",
-    "photo": "http://fotos.com/producto5.jpg",
-    "category": "Papeleria",
-    "price": 4380,
-    "stock": 45
-  },
-  {
-    "id": "6a1808fcf68f8f8b82874bc7",
-    "title": "Cuadernos 100 hojas argollado",
-    "photo": "http://fotos.com/producto6.jpg",
-    "category": "Papeleria",
-    "price": 5500,
-    "stock": 150
-  },
-  {
-    "id": "4bd2c32819bd543759d35701",
-    "title": "Diccionario Lengua española",
-    "photo": "http://fotos.com/producto7.jpg",
-    "category": "Librería",
-    "price": 9050,
-    "stock": 25
-  },
-  {
-    "id": "26d3887bf8d1a5f53045075c",
-    "title": "Carpetas tamaño oficio",
-    "photo": "http://fotos.com/producto8.jpg",
-    "category": "Papelería",
-    "price": 3900,
-    "stock": 50
-  },
-  {
-    "id": "4659d8dc558d2292b5e74e14",
-    "title": "Manual de convivencia escolar",
-    "photo": "http://fotos.com/producto9.jpg",
-    "category": "Librería",
-    "price": 5800,
-    "stock": 20
-  },
-  {
-    "id": "b4d1fff663b06783e8f33705",
-    "title": "Lapiceros punta fina",
-    "photo": "http://fotos.com/producto10.jpg",
-    "category": "Utiles",
-    "price": 2900,
-    "stock": 100
+    "id": "fcb508c6041ce0b30972611f",
+    "title": "BLACK RAIN",
+    "author": "OZZY OSBOURNE",
+    "category": "ROCK",
+    "language": "INGLES",
+    "price": 299000,
+    "stock": 100,
+    "type": "VINILO",
+    "img": "./img/BLACK RAIN.GIF"
   }
 ]

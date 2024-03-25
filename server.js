@@ -1,5 +1,6 @@
 import express, { response } from "express";
 import usersManager from "./data/fs/UsersManager.js";
+import productsManager from "./data/fs/ProductsManager.js";
 
 // server
 const server = express();
@@ -26,6 +27,7 @@ server.get("/", async (req, res) => {
     });
   }
 });
+
 // router - users
 
 // crear usuario
@@ -127,3 +129,28 @@ server.get("/api/users/delete/:uid", async (req, res) => {
 })
 
 // router - products
+// crear producto
+server.get("/api/products/:title/:author/:category/:language/:price/:stock/:type", async (req, res) => {
+  try {
+    const { title, author, category, language, price, stock, type } = req.params;
+    const data = { title, author, category, language, price, stock, type };
+    const product = await productsManager.create(data);
+    if (product) {
+      return res.status(201).json({
+        response: product,
+        success: true
+      })
+    } else {
+      let error = new Error("ERROR product create");
+      error.statusCode = 404
+      throw error;
+    }
+  } catch (error) {
+    console.log(error);
+    return res.status(error.statusCode).json({
+      response: error.message,
+      success: false
+    })
+  }
+})
+
