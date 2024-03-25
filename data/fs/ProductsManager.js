@@ -51,17 +51,19 @@ class ProductsManager {
     }
   }
 
-  async read() {
+  async read(category) {
     try {
       let archivo = await fs.promises.readFile(this.path, "utf-8");
       archivo = JSON.parse(archivo);
+      category && (archivo = archivo.filter((each) => each.category === category));
       if (archivo.length === 0) {
-        console.log("Productos leídos: NO HAY PRODUCTOS");
+        return null;
       } else {
         return archivo;
       }
     } catch (error) {
       console.log("ERROR método read()", error);
+      return null;
     }
   }
 
