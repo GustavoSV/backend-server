@@ -102,6 +102,7 @@ class ProductsManager {
 }
 
 // función para probar la clase ProductsManager
+
 // async function test() {
 //   try {
 //     const producto = new ProductsManager();
