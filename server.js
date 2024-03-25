@@ -1,5 +1,6 @@
 import express, { response } from "express";
 import usersManager from "./data/fs/UsersManager.js";
+import productsManager from "./data/fs/ProductsManager.js";
 
 // server
 const server = express();
@@ -26,8 +27,8 @@ server.get("/", async (req, res) => {
     });
   }
 });
-// router - users
 
+// router - users
 // crear usuario
 server.get("/api/users/:email/:password/:rol", async (req, res) => {
   try {
@@ -106,10 +107,10 @@ server.get("/api/users/:uid", async (req, res) => {
 server.get("/api/users/delete/:uid", async (req, res) => {
   try {
     const { uid } = req.params;
-    const userDel = await usersManager.destroy(uid);
-    if (userDel) {
+    const delUser = await usersManager.destroy(uid);
+    if (delUser) {
       return res.status(200).json({
-        response: userDel,
+        response: delUser,
         success: true
       })
     } else {
@@ -127,3 +128,99 @@ server.get("/api/users/delete/:uid", async (req, res) => {
 })
 
 // router - products
+// crear producto
+server.get("/api/products/:title/:author/:category/:language/:price/:stock/:type", async (req, res) => {
+  try {
+    const { title, author, category, language, price, stock, type } = req.params;
+    const data = { title, author, category, language, price, stock, type };
+    const product = await productsManager.create(data);
+    if (product) {
+      return res.status(201).json({
+        response: product,
+        success: true
+      })
+    } else {
+      let error = new Error("ERROR product create");
+      error.statusCode = 404
+      throw error;
+    }
+  } catch (error) {
+    console.log(error);
+    return res.status(error.statusCode).json({
+      response: error.message,
+      success: false
+    })
+  }
+})
+
+// leer todos y filtrar
+server.get("/api/products", async (req, res) => {
+  try {
+    const { category } = req.query;
+    const allProducts = await productsManager.read(category);
+    if (allProducts) {
+      return res.status(200).json({
+        response: allProducts,
+        success: true
+      })
+    } else {
+      const error = new Error("NOT FOUND PRODUCTS WITH CATEGORY: " + category);
+      error.statusCode = 404;
+      throw error;
+    }
+  } catch (error) {
+    console.log(error);
+    return res.status(error.statusCode).json({
+      response: error.message,
+      success: false
+    });
+  }
+})
+
+// leer un producto
+server.get("/api/products/:pid", async (req, res) => {
+  try {
+    const { pid } = req.params;
+    const product = await productsManager.readOne(pid);
+    if (product) {
+      return res.status(200).json({
+        response: product,
+        success: true
+      })
+    } else {
+      const error = new Error("NOT FOUND PRODUCT ID: " + pid);
+      error.statusCode = 404;
+      throw error;
+    }
+  } catch (error) {
+    console.log(error);
+    return res.status(error.statusCode).json({
+      response: error.message,
+      success: false
+    });
+  }
+})
+
+// eliminar un producto
+server.get("/api/products/delete/:pid", async (req, res) => {
+  try {
+    const { pid } = req.params;
+    const delProduct = await productsManager.destroy(pid);
+    if (delProduct) {
+      return res.status(200).json({
+        response: delProduct,
+        success: true
+      })
+    } else {
+      const error = new Error("PRODUCT NOT DELETE. ID:" + pid);
+      error.statusCode = 404;
+      throw error;
+    }
+  } catch (error) {
+    console.log(error);
+    return res.status(error.statusCode).json({
+      response: error.message,
+      success: false
+    });
+  }
+})
