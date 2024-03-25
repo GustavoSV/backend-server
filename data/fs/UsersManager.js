@@ -1,6 +1,7 @@
 import fs from "fs";
 import crypto from "crypto";
 
+
 class UsersManager {
   constructor() {
     this.path = "./data/fs/files/users.json";
