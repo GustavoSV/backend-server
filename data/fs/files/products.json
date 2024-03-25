@@ -78,5 +78,85 @@
     "category": "Utiles",
     "price": 2900,
     "stock": 100
+  },
+  {
+    "id": "71250991623310c332287699",
+    "title": "Lápiz en carboncillo #2",
+    "photo": "http://fotos.com/producto1.jpg",
+    "category": "Papeleria",
+    "price": 2000,
+    "stock": 100
+  },
+  {
+    "id": "49d76be0f86e5d9a05ca9402",
+    "title": "Sanguina #201",
+    "photo": "http://fotos.com/producto2.jpg",
+    "category": "Papeleria",
+    "price": 3000,
+    "stock": 60
+  },
+  {
+    "id": "412768713534cdad10366446",
+    "title": "Pisapapeles clásico",
+    "photo": "http://fotos.com/producto3.jpg",
+    "category": "Escritorio",
+    "price": 1890,
+    "stock": 78
+  },
+  {
+    "id": "c38e5a8834f23ccd85df518e",
+    "title": "Organizador de libros",
+    "photo": "http://fotos.com/producto4.jpg",
+    "category": "Escritorio",
+    "price": 3565,
+    "stock": 23
+  },
+  {
+    "id": "ab5daebe71e8a2cc72e6c7fa",
+    "title": "Marcador colores varios",
+    "photo": "http://fotos.com/producto5.jpg",
+    "category": "Papeleria",
+    "price": 4380,
+    "stock": 45
+  },
+  {
+    "id": "6a1808fcf68f8f8b82874bc7",
+    "title": "Cuadernos 100 hojas argollado",
+    "photo": "http://fotos.com/producto6.jpg",
+    "category": "Papeleria",
+    "price": 5500,
+    "stock": 150
+  },
+  {
+    "id": "4bd2c32819bd543759d35701",
+    "title": "Diccionario Lengua española",
+    "photo": "http://fotos.com/producto7.jpg",
+    "category": "Librería",
+    "price": 9050,
+    "stock": 25
+  },
+  {
+    "id": "26d3887bf8d1a5f53045075c",
+    "title": "Carpetas tamaño oficio",
+    "photo": "http://fotos.com/producto8.jpg",
+    "category": "Papelería",
+    "price": 3900,
+    "stock": 50
+  },
+  {
+    "id": "4659d8dc558d2292b5e74e14",
+    "title": "Manual de convivencia escolar",
+    "photo": "http://fotos.com/producto9.jpg",
+    "category": "Librería",
+    "price": 5800,
+    "stock": 20
+  },
+  {
+    "id": "b4d1fff663b06783e8f33705",
+    "title": "Lapiceros punta fina",
+    "photo": "http://fotos.com/producto10.jpg",
+    "category": "Utiles",
+    "price": 2900,
+    "stock": 100
   }
 ]
