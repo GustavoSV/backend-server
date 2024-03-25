@@ -1,24 +1,10 @@
 [
   {
-    "id": "7eda93e6d613fe4842324faf",
-    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
-    "email": "gustavo@usuarios.com",
-    "password": "",
-    "rol": "1"
-  },
-  {
     "id": "02fcf65773d362a9157a37ee",
     "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
     "email": "gustavo@usuarios.com",
     "password": "clave123",
     "rol": "2"
-  },
-  {
-    "id": "cc7306a8f3ae47ca66b8481e",
-    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
-    "email": "gustavo@usuarios.com",
-    "password": "2xxx444",
-    "rol": "1"
   },
   {
     "id": "2b1502958a350c339aae9184",
@@ -33,5 +19,12 @@
     "email": "marquiños@usuarios.com",
     "password": "GG709ijU",
     "rol": "2"
+  },
+  {
+    "id": "0122507a4adf52aefd19a8c3",
+    "photo": "https://cdn-icons-png.flaticon.com/512/2919/2919600.png",
+    "email": "vinijr@usuarios.com",
+    "password": "REAL2024",
+    "rol": "1"
   }
 ]

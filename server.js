@@ -1,4 +1,4 @@
-import express from "express";
+import express, { response } from "express";
 import usersManager from "./data/fs/UsersManager.js";
 
 // server
@@ -90,6 +90,30 @@ server.get("/api/users/:uid", async (req, res) => {
       })
     } else {
       const error = new Error("USER NOT EXIST. Id: " + uid);
+      error.statusCode = 404;
+      throw error;
+    }
+  } catch (error) {
+    console.log(error);
+    return res.status(error.statusCode).json({
+      response: error.message,
+      success: false
+    })
+  }
+})
+
+// eliminar un usuario
+server.get("/api/users/delete/:uid", async (req, res) => {
+  try {
+    const { uid } = req.params;
+    const userDel = await usersManager.destroy(uid);
+    if (userDel) {
+      return res.status(200).json({
+        response: userDel,
+        success: true
+      })
+    } else {
+      const error = new Error("USER NOT DELETED. Id: " + uid);
       error.statusCode = 404;
       throw error;
     }
